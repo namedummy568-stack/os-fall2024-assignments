@@ -13,6 +13,10 @@ static void __exit hello_exit(void)
     printk(KERN_INFO "Goodbye, Kernel Module!\n");
 }
 
+int my_new_function() {
+    return 0;
+}
+
 module_init(hello_init);
 module_exit(hello_exit);
 
